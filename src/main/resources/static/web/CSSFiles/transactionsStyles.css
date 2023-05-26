@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body{
+    background: linear-gradient(rgba(41, 41, 41, 0.72), rgba(41, 41, 41, 0.72)), url(../imagenes/pexels-snapwire-37724-modified.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* overflow: hidden; */
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: change 10s infinite ease-in-out;
+}
+
+p{
+    margin-bottom: 0 !important;
+    padding-bottom: 1rem !important;
+}
+
+main{
+    min-height: 75vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.322);
+    text-align: center;
+    width: 100%;
+}
+
+h3{
+    color: white;
+    margin: 1rem;
+}
+
+td, th{
+    text-align: center;
+}
+
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,65,121,1) 35%, rgba(0,212,255,1) 100%);    
+    height: 10vh;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(rgba(32, 32, 32, 0.72), rgba(32, 32, 32, 0.72  ));
+    z-index: 2;
+}
+.nav-link{
+    color: white;
+}
+.nav-item{
+    height: 20% !important;
+}
+
+footer{
+    background-color:rgb(0,212,255);
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#iconoBan{
+    /* object-fit: contain; */
+    width: 20rem;
+    height: 95%;
+    /* background-color: rgb(39, 84, 136); */
+    border-radius: 1rem;
+    padding: 3px;
+}
+
+.formTransactions{
+    background-color: rgb(214, 232, 235);
+    border-radius: 4px;
+    padding: 5%;
+    margin: 5%;
+}
+
+.botonLogOut{
+    color: white;
+    /* background-color: rgb(9,65,121) ; */
+    /* border-radius: 2rem;
+    padding: 10px; */
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+ background-color: lightblue;
+}
+
+.divFooter{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+
+}
+
+#divTabla{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 11%;
+    margin-right: 11%;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.div5Footer{
+    display: flex;
+    justify-content: end;
+    margin: 2rem;
+}
+
+ion-icon{
+    height: 2rem;
+    width: 2rem;
+    color: black;
+}
+
+#h6Id{
+    font-size: large;
+    font-weight: bold;
+}
+
+#idFooter{
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.logosRedes:hover{
+    color: white;
+    /* object-fit: contain;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem; */
+}
+
+.botonAtras{
+    color: white;
+    background-color: rgb(9,65,121) ;
+    border-radius: 2rem;
+    position: sticky;
+}
+
+.botonClase{
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    position: sticky;
+    bottom: 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.buttonUp{
+    position: sticky;
+    bottom:0;
+    color: white;
+    background-color: rgb(9,65,121) ;
+    border-radius: 2rem;
+    padding: 10px;
+}
+
+#imgPromo{
+    object-fit: cover;
+    height: 100%;
+    /* width: 40%; */
+    /* margin-left: 11%; */
+}
+
+.botonClase{
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    position: sticky;
+    bottom: 5px;
+    margin: 0;
+}

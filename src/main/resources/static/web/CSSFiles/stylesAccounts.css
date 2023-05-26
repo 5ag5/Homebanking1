@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+
+    background: linear-gradient( rgba(32, 32, 32, 0.72), rgba(32, 32, 32, 0.72  ) ), url(../imagenes/rascacielos.jpeg);
+    background-size: cover;
+    z-index: 1;
+}
+p{
+    margin-bottom: 0 !important;
+    padding-bottom: 1rem !important;
+}
+
+main{
+    min-height: 67vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.322);
+    /* margin: 1rem; */
+    text-align: center;
+}
+
+h3{
+    color: white;
+    /* margin: 1rem; */
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+div{
+    margin: 1rem;
+}
+
+td, th{
+    text-align: center;
+    font-size: large;
+}
+
+header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,65,121,1) 35%, rgba(0,212,255,1) 100%);    
+    height: 10vh;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: linear-gradient(rgba(32, 32, 32, 0.72), rgba(32, 32, 32, 0.72  ));
+    z-index: 2;
+}
+.nav-link{
+    color: white;
+}
+.nav-item{
+    height: 20% !important;
+}
+
+footer{
+    background-color:rgb(0,212,255);
+    /* height: 10vh; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#h6Id{
+    font-size: large;
+    font-weight: bold;
+}
+
+#iconoBan{
+    /* object-fit: contain; */
+    width: 20rem;
+    height: 95%;
+    /* background-color: rgb(39, 84, 136); */
+    border-radius: 1rem;
+    padding: 3px;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+ background-color: lightblue
+}
+
+#divTabla{
+    margin-left: 11%;
+    margin-right: 11%;
+    /* overflow: scroll; */
+}
+
+#cuerpoCartas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: 11%;
+    margin-right: 11%;
+}
+
+.card{
+    position: relative;
+    background-color: rgb(214, 232, 235);
+}
+
+.table{
+    background-color: rgb(214, 232, 235);
+    border-radius: 4px;
+}
+
+
+.div5Footer{
+    display: flex;
+    justify-content: end;
+}
+
+ion-icon{
+    height: 2rem;
+    width: 2rem;
+    color: black;
+}
+
+.logosRedes:hover{
+    color: white;
+    /* object-fit: contain;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem; */
+}
+
+.card-body{
+    margin: 1rem;
+}
+
+.botonLogOut{
+    color: white;
+    /* background-color: rgb(9,65,121) ;
+    border-radius: 2rem;
+    padding: 10px; */
+}
+
+.buttonUp{
+    position: sticky;
+    bottom:0;
+    color: white;
+    background-color: rgb(9,65,121) ;
+    border-radius: 2rem;
+    padding: 10px;
+}
+
+.botonClase{
+    display: flex;
+    justify-content: end;
+    align-content: end;
+    position: sticky;
+    bottom: 5px;
+    margin: 0;
+}
+
+.divFooter{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-style: bold;
+}
+
+#idFooter{
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+}
+
+#searchBar{
+    margin: 7px;
+    background-color: white;
+    height: 10%;
+    border-radius: 1rem;
+}
+
+.searchButton{
+    height: 1rem;
+}
+
+#search1, #search2{
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 321px) {
+#divTabla{
+    margin-left: 11%;
+    margin-right: 11%;
+    overflow: scroll;
+    }
+}
+
+@media only screen and (min-width: 322px) and (max-width: 375px) {
+    #divTabla{
+        margin-left: 11%;
+        margin-right: 11%;
+        overflow: scroll;
+    }
+    }
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    #divTabla{
+        margin-left: 11%;
+        margin-right: 11%;
+        overflow: scroll;
+    }
+}
