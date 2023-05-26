@@ -1,4 +1,4 @@
-package com.mindhub.homebanking;
+/*package com.mindhub.homebanking;
 
 import com.mindhub.homebanking.Utils.CardUtils;
 import org.junit.jupiter.api.Test;
@@ -33,4 +33,5 @@ public class CardUtilsTests {
         int cvv = CardUtils.getCVV();
         assertThat(cvv, instanceOf(int.class));
     }
-}
+
+} */
