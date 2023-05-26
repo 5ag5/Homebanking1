@@ -21,7 +21,7 @@ const app = createApp( {
     methods: {
         async getData(){
             try{
-            axios.get('http://localhost:8080/rest/clients')
+            axios.get('/rest/clients')
             .then(elemento => {
                 this.clients=elemento.data._embedded.clients    
                 console.log(elemento.data._embedded.clients)

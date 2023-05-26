@@ -19,7 +19,7 @@ const app = createApp({
     methods: {
         async getData(){
             try{
-                axios.get('http://localhost:8080/api/clients/current')
+                axios.get('/api/clients/current')
                 .then(elemento =>{
                     console.log(elemento.data.accounts)
                     this.outstandingLoans = elemento.data.clientLoans

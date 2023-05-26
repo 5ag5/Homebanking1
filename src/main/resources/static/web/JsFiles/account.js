@@ -34,7 +34,7 @@ const app = createApp({
         async getData(){
             //axios.get('http://localhost:8080/api/accounts/current/'+this.id)
             //axios.get('http://localhost:8080/api/accounts/current')
-            axios.get('http://localhost:8080/api/clients/current/')
+            axios.get('/api/clients/current/')
             .then(elemento =>{
                     this.idAccount = JSON.parse(localStorage.getItem('accountID') || 0)
                     console.log(this.idAccount)  

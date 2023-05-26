@@ -22,7 +22,7 @@ const app = createApp({
     methods: {
         async getData(){
             try{
-                axios.get('http://localhost:8080/api/clients/current')
+                axios.get('/api/clients/current')
                 .then(elemento =>{
                     this.accounts = elemento.data.accounts
                     this.clientes = elemento.data;

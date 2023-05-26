@@ -21,7 +21,7 @@ const app = createApp({
 
     methods:{
         async getData(){
-            axios.get('http://localhost:8080/api/clients/current/').then(element =>{
+            axios.get('/api/clients/current/').then(element =>{
                 this.client = element
                 this.accounts = element.data.accounts
                 console.log(this.accounts)
