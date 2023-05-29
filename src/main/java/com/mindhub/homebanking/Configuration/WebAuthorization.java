@@ -26,6 +26,10 @@ public class WebAuthorization {
                 .antMatchers("/web/index.html").permitAll()
                 .antMatchers("/web/manager.html").hasAuthority("ADMIN")
                 .antMatchers("/web/newUser.html").permitAll()
+
+                .antMatchers(HttpMethod.POST, "/clients").permitAll()
+                .antMatchers(HttpMethod.POST, "/api/clients").permitAll()
+
                 .antMatchers("/web/accounts.html").hasAuthority("CLIENT")
                 .antMatchers("/web/account.html").hasAuthority("CLIENT")
                 .antMatchers("/web/cards.html").hasAuthority("CLIENT")
@@ -43,9 +47,9 @@ public class WebAuthorization {
                 .antMatchers("/api/clients/current").hasAuthority("CLIENT")
                 .antMatchers("/api/transactions").hasAuthority("CLIENT")
                 .antMatchers("/api/accounts/**").hasAuthority("CLIENT")
-                .antMatchers("/api/loans").hasAuthority("CLIENT")
-                .antMatchers(HttpMethod.POST, "/clients").permitAll();
-                //.anyRequest().denyAll();
+                .antMatchers("/api/loans").hasAuthority("CLIENT");
+
+        //.anyRequest().denyAll();
 
         //Cross-Origin Resource Sharing
         http.cors().and().authorizeRequests();
